@@ -1,0 +1,44 @@
+{
+  "Book 1" : {
+      "People" : [
+          {
+              "Person" : "Person 1",
+              "Connections" : "Connection 1"
+          }
+      ],
+      "Places" : [
+          {
+              "Place" : "Place 1",
+              "Connections" : "Connection 1"
+          },
+          {
+              "Place" : "Place 2",
+              "Connections" : ["Connection 1", "Connection 2"]
+          }
+      ],
+      "Books" : [
+          {
+              "Book" : "Book 1",
+              "Connections" : "Connection 1"
+          }
+      ]
+  },
+  "Book 2" : {
+      "People" : [
+          {
+              "Person" : "Person 1",
+              "Connections" : "Connection 1"
+          },
+          {
+              "Person" : "Person 2",
+              "Connections" : "Connection 1"
+          }
+      ],
+      "Books" : [
+        {
+              "Book" : "Book 1",
+              "Connections" : "Connection 1"
+        }
+      ]
+  }
+}
