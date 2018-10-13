@@ -1,1 +1,3 @@
-Express + Node + MongoDB + d3
+Currently collecting data. 
+
+This project will mainly utilize D3.js
