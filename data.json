@@ -1,84 +1,169 @@
 [
     {
-        "Book 1": {
-            "Places": [
-                {
-                    "Place": "Place 1",
-                    "Setting": true
-                },
-                {
-                    "Place": "Place 2",
-                    "Setting" : false
-                }
-            ],
-            "Connections": [
-                {
-                    "Book" : "Book 1",
-                    "References" : ["Reference 1"]
-                },
-                {
-                    "Book" : "Book 2",
-                    "References" : ["Reference 1", "Reference 2", "Reference 3"]
-                }
-            ]
-        }
-    },
-    {
-        "Carrie": {
+        "Carrie" : {
             "Publication date" : "April, 1974",
-            "Places": [
+            "Collection" : false,
+            "Places" : [
                 {
-                    "Place": "Chamberlain, Maine",
-                    "Setting": true
+                    "Place" : "Chamberlain, Maine",
+                    "Setting" : true
                 },
                 {
-                    "Place": "Castle Rock ???",
+                    "Place" : "Castle Rock ???",
                     "Setting" : false
                 }
             ],
-            "Connections": [],
-            "19" : []
+            "Connections" : [],
+            "Themes" : {
+                "19" : [],
+                "Appearances" : []
+            }
         }
     },
     {
-        "'Salem's Lot": {
+        "'Salem's Lot" : {
             "Publication date" : "October, 1975",
-            "Places": [
+            "Collection" : false,
+            "Places" : [
                 {
-                    "Place": "Jerusalem's Lot, Maine",
-                    "Setting": true
+                    "Place" : "Jerusalem's Lot, Maine",
+                    "Setting" : true
                 }
             ],
-            "Connections": [],
-            "19" : []
+            "Connections" : [],
+            "Themes" : {
+                "19" : [],
+                "Appearances" : ["Father Callahan"]
+            }
         }
     },
     {
-        "The Shining": {
+        "The Shining" : {
             "Publication date" : "January, 1977",
-            "Places": [],
-            "Connections": [],
-            "19" : ["There are 19 wide steps down to the hotel lobby."]
+            "Collection" : false,
+            "Places" : [],
+            "Connections" : [],
+            "Themes" : {
+                "19" : {
+                    "Passage" : "There are 19 wide steps down to the hotel lobby.",
+                    "link" : "http://www.derryconnection.com/book/the-shining/"
+                },
+                "Appearances" : []
+            }
         }
     },
     {
-        "The Stand": {
-            "Publication date" : "September, 1978",
-            "Places": [],
-            "Connections": [],
-            "19" : ["The superflu epidemic takes 19 days to kill off 99% of humanity."]
-        }
-    },
-    {
-        "The Dead Zone": {
-            "Publication date" : "August, 1979",
+        "One for the Road": {
+            "Publication date" : "March 1977",
+            "Collection" : "Night Shift",
             "Places": [
                 {
                     "Place": "Jerusalem's Lot",
-                    "Setting": false
+                    "Setting": true
                 }
             ],
             "Connections": [
+                {
+                    "Book" : "'Salem's Lot",
+                    "References" : [
+                        {
+                            "Reference" : "The story serves as a sequel to Salem's Lot",
+                            "Passage" : ""
+
+                        }
+                    ]
+                }
+            ],
+            "Themes" : {
+                "19" : [],
+                "Appearances" : []
+            }
+        }
+    },
+    {
+        "The Stand" : {
+            "Publication date" : "September, 1978",
+            "Collection" : false,
+            "Places" : [],
+            "Connections" : [],
+            "Themes" : {
+                "19" : [
+                    {
+                        "Passage" : "The superflu epidemic takes 19 days to kill off 99% of humanity.",
+                        "link" : "http://www.derryconnection.com/book/the-stand/"
+                    }
+                ],
+                "Appearances" : ["The Shop"]
+            }
+        }
+    },
+    {
+        "Jerusalem's Lot": {
+            "Publication date" : "February 1978",
+            "Collection" : "Night Shift",
+            "Places": [
+                {
+                    "Place": "Jerusalem's Lot",
+                    "Setting": true
+                }
+            ],
+            "Connections": [
+                {
+                    "Book" : "'Salem's Lot",
+                    "References" : [
+                        {
+                            "Reference" : "The story serves as a prequel to the events of Salem's Lot",
+                            "Passage" : ""
+
+                        }
+                    ]
+                }
+            ],
+            "Themes" : {
+                "19" : [],
+                "Appearances" : []
+            }
+        }
+    },
+    {
+        "The Last Rung on the Ladder": {
+            "Publication date" : "March 1978",
+            "Collection" : "Night Shift",
+            "Places": [
+                {
+                    "Place": "Hemingford Home, Nebraska",
+                    "Setting": true
+                }
+            ],
+            "Connections": [
+                {
+                    "Book" : "The Stand",
+                    "References" : [
+                        {
+                            "Reference" : "Larry and his sister grew up in Hemingford Home, the same town where Mother Abigail was born and where the survivors of Captain Trips are paranormally drawn to",
+                            "Passage" : ""
+
+                        }
+                    ]
+                }
+            ],
+            "Themes" : {
+                "19" : [],
+                "Appearances" : []
+            }
+        }
+    },
+    {
+        "The Dead Zone" : {
+            "Publication date" : "August, 1979",
+            "Collection" : false,
+            "Places" : [
+                {
+                    "Place" : "Jerusalem's Lot",
+                    "Setting" : false
+                }
+            ],
+            "Connections" : [
                 {
                     "Book" : "The Stand",
                     "References" : [
@@ -91,18 +176,125 @@
                     ]
                 },
                 {
+                    "Book" : "'Salem's Lot",
+                    "References" : [
+                        {
+                            "Reference" : "Johnny Smith is buried in the same cemetery as the Marstens, Hubie Marsten being the original owner of the Marsten House in 'Salem's Lot ",
+                            "link" : "stephenking.wikia.com/wiki/The_Dead_Zone"
+                        }
+                    ]
+                },
+                {
                     "Book" : "Carrie",
                     "References" : [
                         {
                             "Reference" : "Someone accuses Johnny Smith of setting fire to Cathy's Roadhouse with his mind 'like in that book Carrie'",
-                            "Chapter" : "Part II / Chapter 23",
                             "Passage" : "No one answered. And then, suddenly, from somewhere behind him Patty Strachan began to talk in a high hysterical voice. 'It’s his fault, that guy there! He made it happen! He set it on fire by his mind, just like in that book Carrie. You murderer! Killer! You ...'",
                             "link" : "www.derryconnection.com/book/the-dead-zone"
                         }
                     ]
                 }
             ],
-            "19" : ["Johnny plays number 19 on the roulette to win the big lot."]
+            "Themes" : {
+                "19" : [
+                    {
+                        "Passage" : "Johnny plays number 19 on the roulette to win the big lot.",
+                        "link" : "www.derryconnection.com/book/the-dead-zone"
+                    }
+                ],
+                "Appearances" : ["Frank Dodd"]
+            }
+        }
+    },
+    {
+        "Firestarter" : {
+            "Publication date" : "September 1980",
+            "Collection" : false,
+            "Places" : [],
+            "Connections" : [],
+            "Themes" : {
+                "19" : [],
+                "Appearances" : ["The Shop"]
+            }
+        }
+    },
+    {
+        "Cujo": {
+            "Publication date" : "September 1981",
+            "Collection" : false,
+            "Places": [
+                {
+                    "Place": "Castle Rock",
+                    "Setting": true
+                }
+            ],
+            "Connections": [
+                {
+                    "Book" : "The Dead Zone",
+                    "References" : [
+                        {
+                            "Reference" : "The story of Frank Dodd is used to warn children",
+                            "Passage" : "Yet even in this enlightened age, when so many parents are aware of the psychological damage they may do to their children, surely there was one parent somewhere in Castle Rock - or perhaps one grandmother - who quieted the kids by telling them that Frank Dodd would get them if they didn't watch out, if they weren't good. And surely a hush fell as children looked toward their dark windows and thought of Frank Dodd in his shiny black vinyl raincoat, Frank Dodd who had choked ... and choked ... and choked.",
+                            "link" : "http://www.derryconnection.com/book/cujo/"
+
+                        }
+                    ]
+                }
+            ],
+            "Themes" : {
+                "19" : [],
+                "Appearances" : ["The Shop"]
+            }
+        }
+    },
+    {
+        "The Dark Tower I: The Gunslinger" : {
+            "Publication date" : "June 1982 (Originally published as novellas from 1978-1981)",
+            "Collection" : false,
+            "Places" : [
+                {
+                    "Place" : "All-world",
+                    "Setting" : true
+                }
+            ],
+            "Connections" : [],
+            "Themes" : {
+                "19" : [],
+                "Appearances" : ["The Dark Tower"]
+            }
+        }
+    },
+    {
+        "Christine" : {
+            "Publication date" : "April 1983",
+            "Collection" : false,
+            "Places" : [],
+            "Connections" : [],
+            "Themes" : {
+                "19" : [],
+                "Appearances" : []
+            }
+        }
+    },
+    {
+        "Pet Sematary" : {
+            "Publication date" : "November 1983",
+            "Collection" : false,
+            "Places" : [
+                {
+                    "Place" : "Jerusalem's Lot",
+                    "Setting" : false
+                },
+                {
+                    "Place" : "Derry, Maine",
+                    "Setting" : false
+                }
+            ],
+            "Connections" : [],
+            "Themes" : {
+                "19" : [],
+                "Appearances" : []
+            }
         }
     }
 ]
