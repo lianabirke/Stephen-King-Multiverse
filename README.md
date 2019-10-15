@@ -1,1 +1,3 @@
-Visualizing the many connections between King's works.
+Currently collecting data. 
+
+This project will mainly utilize D3.js
